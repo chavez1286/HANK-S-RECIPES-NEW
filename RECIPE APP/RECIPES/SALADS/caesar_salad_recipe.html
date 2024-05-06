@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Salad Recipe</title>
+    <link rel="stylesheet" href="../../css/styles.css"> <!-- Corrected path to CSS file -->
+    <style>
+        header {
+            background-image: url('../../images/caesar salad.png'); /* Path to your header image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 150px; /* Adjust height as needed */
+            position: relative; /* Needed for absolute positioning */
+            text-align: center; /* Center align the logo and title */
+        }
+
+        header .logo-container {
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            transform: translate(-50%, -50%) scale(2); /* Center the logo and double its size */
+            width: 250px; /* Adjust width for logo */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        header .logo-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        header h1 {
+            display: none; /* Hide the title in the header */
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        main {
+            padding-top: 20px; /* Add space below the header */
+        }
+
+        h1 {
+            color: orange;
+            text-align: center;
+            margin-top: 20px; /* Add margin above the title */
+        }
+
+        .recipe-title {
+            color: orange;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../../images/logo.png" alt="Logo"> <!-- Corrected path to logo image -->
+        </div>
+    </header>
+    <h1>Caesar Salad Recipe</h1> <!-- Moved the title outside the header -->
+    <nav>
+        <ul>
+            <li><a href="../../CSS/index.html">HOME</a></li> <!-- Removed duplicate link -->
+        </ul>
+    </nav>
+    <main>
+        <h2 class="recipe-title">Ingredients:</h2>
+        <ul>
+            <li>Romaine Lettuce</li>
+            <li>Croutons</li>
+            <li>Grated Parmesan Cheese</li>
+            <li>Caesar Dressing</li>
+            <li>Black Pepper</li>
+        </ul>
+        <h2>Directions:</h2>
+        <ol>
+            <li>Wash and dry the Romaine lettuce, then tear into bite-sized pieces.</li>
+            <li>Add croutons and grated Parmesan cheese to the lettuce.</li>
+            <li>Pour Caesar dressing over the salad.</li>
+            <li>Toss the salad until evenly coated with dressing.</li>
+            <li>Season with freshly ground black pepper to taste.</li>
+        </ol>
+    </main>
+    <footer>
+        <p>&copy; 2024 Recipe Website</p>
+    </footer>
+</body>
+</html>

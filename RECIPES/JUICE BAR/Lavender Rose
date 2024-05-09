@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isa Vibe</title>
+    <style>
+        /* Remove default margin and padding */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* Set the background image to fit within the screen */
+        body::before {
+            content: "";
+            background-image: url('Lavender Rose.jpg'); /* Replace 'Cinn City.jpg' with your image filename */
+            background-size: contain;
+            background-position: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        /* Style for back and home buttons */
+        .buttons-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+        }
+        .buttons-container button {
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Back and home buttons -->
+    <div class="buttons-container">
+        <button onclick="goBack()">Back</button>
+        <button onclick="goHome()">Home</button>
+    </div>
+
+    <script>
+        // Function to go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+        // Function to navigate to the home page
+        function goHome() {
+            window.location.href = "index.html"; // Change "../../index.html" to your home page URL
+        }
+    </script>
+</body>
+</html>

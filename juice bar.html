@@ -8,13 +8,17 @@
     <style>
         /* Embedded CSS styles for demonstration purposes */
         /* Add your custom styles here */
+        body {
+            margin: 0;
+            padding: 0;
+        }
         main {
-            padding: 20px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             height: 100vh;
+            background-color: #f8f8f8; /* Light gray background */
         }
         ul {
             list-style: none;
@@ -22,10 +26,10 @@
             margin: 0;
         }
         li {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
-            background-color: #f9f9f9; /* Light gray background */
+            background-color: #2ecc71; /* Green circle */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -34,12 +38,12 @@
         }
         li a {
             text-decoration: none;
-            color: #333; /* Dark gray text color */
+            color: #fff; /* White text color */
             font-weight: bold;
             text-align: center;
         }
         li:hover {
-            background-color: #ececec; /* Lighter gray background on hover */
+            background-color: #27ae60; /* Darker green background on hover */
         }
     </style>
 </head>

@@ -7,33 +7,64 @@
     <link rel="stylesheet" href="CSS/styles.css"> <!-- Link to your CSS file -->
     <style>
         /* Embedded CSS styles for demonstration purposes */
-        /* Add your custom styles here */
         body {
             margin: 0;
             padding: 0;
         }
+        header {
+            background-color: #f39c12; /* Orange */
+            color: #fff; /* White */
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 100px; /* Adjust as needed */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff; /* White */
+            text-decoration: none;
+            font-size: 18px;
+        }
         main {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-            height: 100vh;
+            padding: 20px;
             background-color: #f8f8f8; /* Light gray background */
         }
         ul {
             list-style: none;
             padding: 0;
             margin: 0;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
         li {
-            width: 200px;
-            height: 200px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             background-color: #2ecc71; /* Green circle */
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 10px;
+            margin: 15px;
             transition: background-color 0.3s ease;
         }
         li a {
